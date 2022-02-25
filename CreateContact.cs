@@ -8,6 +8,9 @@ namespace AddressBook
 {
     public class CreateContact
     {
+        /// <summary>
+        /// Generates the AddressBook.
+        /// </summary>
         public void CreateContacts()
         {
             string[] contact = new string[8];
@@ -29,12 +32,8 @@ namespace AddressBook
             contact[7] = Console.ReadLine();
 
             Console.WriteLine("First Name    Last name    Address    City    State  zipcode   Phone number  email");
-            for (int i = 0; i < contact.Length; i++)
-            {
-                Console.Write(contact[i]+"  ");
-
-            }
-            Console.WriteLine( "  ");
+            
+            Console.WriteLine("First Name:{0}   Last name:{1}   Address:{2}   City:{3}   State:{4} zipcode:{5}  Phone number:{6} email:{7}", contact[0], contact[1],contact[2], contact[3], contact[4], contact[5], contact[6], contact[7]);
         }
     }
 }
