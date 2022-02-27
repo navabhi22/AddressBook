@@ -31,24 +31,8 @@ namespace AddressBook
             Console.WriteLine("Enter the email");
             contact[7] = Console.ReadLine();
 
-            Console.WriteLine("First Name    Last name    Address    City    State  zipcode   Phone number  email");
             
             Console.WriteLine("First Name:{0}   Last name:{1}   Address:{2}   City:{3}   State:{4} zipcode:{5}  Phone number:{6} email:{7}", contact[0], contact[1],contact[2], contact[3], contact[4], contact[5], contact[6], contact[7]);
-
-            Console.WriteLine("Press 0 to edit First Name");
-            Console.WriteLine("Press 1 to edit Last Name");
-            Console.WriteLine("Press 2 to edit Address");
-            Console.WriteLine("Press 3 to edit City");
-            Console.WriteLine("Press 4 to edit State");
-            Console.WriteLine("Press 5 to edit ZIP code");
-            Console.WriteLine("Press 6 to edit Phone Number");
-            Console.WriteLine("Press 7 to edit email");
-            int option = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("enter ");
-            contact[option] = Console.ReadLine();
-            Console.WriteLine("First Name:{0}   Last name:{1}   Address:{2}   City:{3}   State:{4} zipcode:{5}  Phone number:{6} email:{7}", contact[0], contact[1], contact[2], contact[3], contact[4], contact[5], contact[6], contact[7]);
-
-
         }
     }
 }
